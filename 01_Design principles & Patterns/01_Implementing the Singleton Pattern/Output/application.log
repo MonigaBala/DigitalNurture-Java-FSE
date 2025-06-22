@@ -1,0 +1,10 @@
+[2025-06-18 22:19:18] [INFO] Application started.
+[2025-06-18 22:19:18] [WARNING] This is a warning message.
+[2025-06-18 22:19:18] [ERROR] This is a critical error.
+[2025-06-18 22:19:18] [INFO] Logger test complete.
+[2025-06-18 22:20:02] [INFO] Application started.
+[2025-06-18 22:20:02] [WARNING] This is a warning message.
+[2025-06-18 22:20:02] [ERROR] This is a critical error.
+[2025-06-18 22:20:02] [INFO] Logger test complete.
+[2025-06-18 22:57:25] [WARNING] Something might be wrong
+[2025-06-18 22:57:42] [ERROR] System crashed!
