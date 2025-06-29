@@ -1,0 +1,11 @@
+--------------------------------------------------------------------------------
+-- Output after calling: EXEC ProcessMonthlyInterest;
+-- Description:
+--     This shows updated balances for all savings accounts after 1% interest applied
+--------------------------------------------------------------------------------
+
+ACCOUNT_ID | CUSTOMER_ID | ACCOUNT_TYPE | BALANCE
+-----------|-------------|--------------|---------
+1          | 101         | Savings      | 10100
+2          | 102         | Savings      | 15150
+3          | 103         | Current      | 20000

@@ -1,0 +1,11 @@
+--------------------------------------------------------------------------------
+-- File       : logging_output.txt
+-- Author     : MonigaBalasubramanian
+-- Scenario   : Logging Error and Warning Messages using SLF4J + Logback
+-- Description:
+--     This output demonstrates SLF4J usage in a Java app. A warning is logged
+--     directly, and an error is triggered by simulating an exception.
+--------------------------------------------------------------------------------
+
+1:47:21.169 [main] WARN  com.logging.example.LoggingApp - Warning: Disk usage nearing threshold limit.
+01:47:21.173 [main] ERROR com.logging.example.LoggingApp - An error occurred while processing: Database connection failed

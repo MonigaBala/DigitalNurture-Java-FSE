@@ -1,0 +1,11 @@
+Setup: Calculator initialized
+Teardown: Calculator cleaned up
+Setup: Calculator initialized
+Teardown: Calculator cleaned up
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.aaademo.CalculatorTest
+Tests run: 2, Failures: 0, Errors: 0
+All tests passed!

@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------------
+-- File       : scenario2_output.txt
+-- Author     : MonigaBalasubramanian
+-- Scenario   : VIP Promotion for Customers Based on Balance
+-- Description:
+--     This output shows the results of a PL/SQL block that sets 'is_vip' = 'Y'
+--     for customers whose account balance exceeds $10,000.
+--
+-- Notes:
+--     - The threshold for VIP status is balance > 10000.
+--     - Customers Ravi and Kiran qualified and were flagged as VIP ('Y').
+--     - Other customers remained with 'N' status.
+--     - Query used to verify results:
+--       SELECT customer_id, name, balance, is_vip FROM customers;
+--------------------------------------------------------------------------------
+
+CUSTOMER_ID | NAME  | BALANCE | IS_VIP
+------------|-------|---------|--------
+101         | Ravi  | 15000   | Y
+102         | Asha  | 8000    | N
+103         | Kiran | 12000   | Y
+104         | Divya | 9500    | N

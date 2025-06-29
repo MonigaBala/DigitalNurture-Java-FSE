@@ -1,0 +1,12 @@
+--------------------------------------------------------------------------------
+-- Output after calling: EXEC UpdateEmployeeBonus('IT', 10);
+-- Description:
+--     This shows updated salaries for employees in 'IT' department after 10% bonus
+--------------------------------------------------------------------------------
+
+EMP_ID | NAME  | DEPARTMENT | SALARY
+-------|-------|------------|--------
+1      | Ravi  | HR         | 40000
+2      | Asha  | IT         | 55000
+3      | Kiran | IT         | 60500
+4      | Divya | Finance    | 45000

@@ -1,0 +1,13 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.testdemo.CalculatorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+All tests passed successfully.
+
+Test Methods:
+✔ testAddition
+✔ testSubtraction
+✔ testMultiplication
+✔ testDivision
+✔ testDivisionByZero (Expected Exception)

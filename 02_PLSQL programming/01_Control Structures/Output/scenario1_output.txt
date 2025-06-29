@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------
+-- File       : scenario1_output.txt
+-- Author     : MonigaBalasubramanian
+-- Scenario   : Interest Discount for Senior Customers (Age > 60)
+-- Description:
+--     This output shows the result of applying a 1% interest discount to customers
+--     who are above 60 years of age.
+--
+-- Notes:
+--     - Customers Ravi (age 65) and Kiran (age 70) received a 1% discount.
+--     - Their loan_interest values have been reduced from original values.
+--     - The data was verified using the following query:
+--       SELECT customer_id, name, age, loan_interest FROM customers;
+--------------------------------------------------------------------------------
+
+CUSTOMER_ID | NAME  | AGE | LOAN_INTEREST
+------------|-------|-----|---------------
+101         | Ravi  | 65  | 7.5
+102         | Asha  | 45  | 9.0
+103         | Kiran | 70  | 9.0
+104         | Divya | 59  | 8.0

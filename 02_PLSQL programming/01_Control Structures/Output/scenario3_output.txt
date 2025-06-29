@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+-- File       : scenario3_output.txt
+-- Author     : MonigaBalasubramanian
+-- Scenario   : Loan Due Reminder for Customers
+-- Description:
+--     This output displays loan reminder messages for customers whose loans
+--     are due within the next 30 days. The reminders were generated using
+--     a PL/SQL block that printed messages via DBMS_OUTPUT.PUT_LINE.
+--
+-- Notes:
+--     - Only loans with due_date <= SYSDATE + 30 are considered.
+--     - The following query was used inside the PL/SQL block:
+--       SELECT loan_id, name, due_date FROM loans JOIN customers ...
+--     - Output was retrieved from the DBMS Output tab in SQL Developer.
+--------------------------------------------------------------------------------
+
+Reminder: Loan ID 201 for customer Ravi is due on 08-Jul-2025  
+Reminder: Loan ID 203 for customer Kiran is due on 23-Jul-2025

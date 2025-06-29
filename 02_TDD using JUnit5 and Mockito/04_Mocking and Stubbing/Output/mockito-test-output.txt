@@ -1,0 +1,6 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.mockdemo.MyServiceTest
+Tests run: 1, Failures: 0, Errors: 0
+All tests passed successfully.

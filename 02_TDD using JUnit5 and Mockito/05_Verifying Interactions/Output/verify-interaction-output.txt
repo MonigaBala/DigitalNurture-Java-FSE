@@ -1,0 +1,6 @@
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.mockverify.MyServiceTest
+Tests run: 1, Failures: 0, Errors: 0
+✔ Verified that getData() was called
