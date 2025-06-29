@@ -8,8 +8,8 @@ Each assignment follows **clean OOP practices**, modular structure, and demonstr
 
 ## ✅ Week 01 Submissions
 
-➡️ Focus: Core Java, OOP, Recursion, Factory & Singleton Design Patterns  
-➡️ Packages: `com.forecasting`, `com.factorymethods`, `com.ecommerce`, `com.singleton`
+➡️ **Focus:** Core Java, OOP, Recursion, Factory & Singleton Design Patterns  
+➡️ **Packages:** `com.forecasting`, `com.factorymethods`, `com.ecommerce`, `com.singleton`
 
 ---
 
@@ -46,89 +46,85 @@ Each assignment follows **clean OOP practices**, modular structure, and demonstr
 
 ## ✅ Week 02 Submissions
 
-➡️ Focus: PL/SQL Blocks, Stored Procedures, JUnit Testing, SLF4J Logging, Mockito Mocking  
-➡️ Structured into folders like: `FSE_ControlStructures_Exercise`, `FSE_JUnitTesting`, `FSE_LoggingExercise`, `FSE_MockTesting`
+➡️ **Focus:** PL/SQL Blocks, Stored Procedures, JUnit Testing, SLF4J Logging, Mockito Mocking  
+➡️ **Folders:** `FSE_ControlStructures_Exercise`, `FSE_JUnitTesting`, `FSE_LoggingExercise`, `FSE_MockTesting`
 
 ---
 
 ### 📦 1️⃣ PL/SQL Assignments – Control Structures  
 📁 `FSE_ControlStructures_Exercise/code/`, `output/`
 
-#### ✅ Scenario 1: Interest Rate Discount  
-🔹 Loops through customers aged > 60  
-🔹 Applies 1% interest discount
+- **Scenario 1:** Interest Rate Discount  
+  🔹 Loops through customers aged > 60  
+  🔹 Applies 1% interest discount
 
-#### ✅ Scenario 2: Promote to VIP  
-🔹 Balance > $10,000 → set `is_vip = 'Y'`
+- **Scenario 2:** Promote to VIP  
+  🔹 Balance > $10,000 → set `is_vip = 'Y'`
 
-#### ✅ Scenario 3: Loan Due Reminders  
-🔹 Prints reminder for loans due in next 30 days
+- **Scenario 3:** Loan Due Reminders  
+  🔹 Prints reminder for loans due in next 30 days
 
 ---
 
 ### 🔧 2️⃣ PL/SQL Stored Procedures  
 📁 `FSE_ControlStructures_Exercise/code/`, `output/`
 
-#### ✅ `ProcessMonthlyInterest`  
-🔹 Applies 1% interest to savings account balances
+- **Procedure 1:** `ProcessMonthlyInterest`  
+  🔹 Applies 1% interest to all savings account balances
 
-#### ✅ `UpdateEmployeeBonus`  
-🔹 Bonus added to salaries in selected department
+- **Procedure 2:** `UpdateEmployeeBonus`  
+  🔹 Adds bonus to salaries in selected department
 
-#### ✅ `TransferFunds`  
-🔹 Transfers between accounts  
-🔹 Checks for sufficient balance
+- **Procedure 3:** `TransferFunds`  
+  🔹 Transfers funds between accounts  
+  🔹 Validates balance before update
 
 ---
 
 ### 🧪 3️⃣ JUnit Testing  
 📁 `FSE_JUnitTesting/com.testdemo`, `com.aaademo`
 
-#### ✅ Exercise 1: JUnit Setup  
-🔹 Maven project  
-🔹 Tests basic arithmetic operations
+- **Exercise 1:** JUnit Setup  
+  🔹 Tests arithmetic operations using Maven JUnit project
 
-#### ✅ Exercise 2: JUnit Assertions  
-🔹 Uses various `assert*` methods  
-🔹 Validates behavior and outputs
+- **Exercise 2:** Assertions in JUnit  
+  🔹 Uses `assertEquals`, `assertTrue`, `assertNotNull`, etc.
 
-#### ✅ Exercise 3: AAA Pattern & Fixtures  
-🔹 Uses `@Before` / `@After` setup-teardown  
-🔹 Organizes test logic using AAA pattern
+- **Exercise 3:** AAA Pattern & Fixtures  
+  🔹 Uses `@Before` and `@After`  
+  🔹 Implements Arrange-Act-Assert structure
 
 ---
 
 ### 📋 4️⃣ SLF4J Logging  
 📁 `FSE_LoggingExercise/com.logging.example`
 
-#### ✅ Logging with SLF4J + Logback  
-🔹 Logs warning and error messages  
-🔹 Simulates error using exception handling  
-🔹 Configured using Maven dependencies
+- Logs warning and error messages  
+- Configured with SLF4J + Logback  
+- Simulates exceptions and logs them
 
 ---
 
 ### 🔁 5️⃣ Mockito Mocking & Verification  
 📁 `FSE_MockTesting/com.mockdemo`, `com.mockverify`
 
-#### ✅ Exercise 1: Mocking and Stubbing  
-🔹 Mocks `ExternalApi`  
-🔹 Uses `when(...).thenReturn(...)`
+- **Mocking & Stubbing:**  
+  🔹 Mocks `ExternalApi` and stubs return value
 
-#### ✅ Exercise 2: Verifying Interactions  
-🔹 Verifies method was called with expected args
+- **Interaction Verification:**  
+  🔹 Verifies method `getData()` was called on the mock
 
 ---
 
 ## 🛠 Technologies Used
 
-- Java 17 / 21
-- Oracle SQL Developer (PL/SQL)
-- Eclipse IDE
-- Maven
-- JUnit 4.13 / 5.x
-- SLF4J & Logback
-- Mockito 4.x
+- Java 17 / Java 21  
+- Oracle SQL Developer (PL/SQL)  
+- Eclipse IDE  
+- Maven  
+- JUnit 4.13 / 5.x  
+- Mockito 4.x  
+- SLF4J & Logback  
 - Git & GitHub
 
 ---
@@ -141,23 +137,15 @@ Each assignment follows **clean OOP practices**, modular structure, and demonstr
 git clone https://github.com/MonigaBala/DigitalNurture-Java-FSE.git
 
 1. Open Eclipse → File → Import → Maven > Existing Maven Projects
-
-2. Navigate to test/main classes
-
-3. Run as:
-
-   -> Java Application for logic classes
-
-   -> JUnit Test for testing classes
+2. Navigate to your test/main classes
+3. Right-click → Run As → Java Application or JUnit Test
 
 🔵 PL/SQL Scripts
+
 1. Open Oracle SQL Developer
-
 2. Enable DBMS_OUTPUT
-
 3. Run .sql files from FSE_ControlStructures_Exercise/code/
-
-4. Copy terminal output to matching .txt files in output/ folder
+4. Copy results to matching .txt files in the output/ folder
 
 👩‍💻 Author
 Moniga Balasubramanian
