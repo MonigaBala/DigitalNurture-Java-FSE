@@ -2,7 +2,7 @@
 
 This repository contains Java and PL/SQL assignments completed as part of the **Digital Nurture 4.0 - Java FSE DeepSkilling Program** at Cognizant.
 
-Each assignment follows **clean OOP practices**, modular structure, and demonstrates key concepts using Java, PL/SQL, and testing tools.
+Each assignment follows **clean OOP practices**, modular structure, and demonstrates key concepts using Java, PL/SQL, testing tools, ORM frameworks (JPA, Hibernate), and Spring Boot.
 
 ---
 
@@ -55,64 +55,86 @@ Each assignment follows **clean OOP practices**, modular structure, and demonstr
 📁 `FSE_ControlStructures_Exercise/code/`, `output/`
 
 - **Scenario 1:** Interest Rate Discount  
-  🔹 Loops through customers aged > 60  
-  🔹 Applies 1% interest discount
-
 - **Scenario 2:** Promote to VIP  
-  🔹 Balance > $10,000 → set `is_vip = 'Y'`
-
-- **Scenario 3:** Loan Due Reminders  
-  🔹 Prints reminder for loans due in next 30 days
+- **Scenario 3:** Loan Due Reminders
 
 ---
 
 ### 🔧 2️⃣ PL/SQL Stored Procedures  
 📁 `FSE_ControlStructures_Exercise/code/`, `output/`
 
-- **Procedure 1:** `ProcessMonthlyInterest`  
-  🔹 Applies 1% interest to all savings account balances
-
-- **Procedure 2:** `UpdateEmployeeBonus`  
-  🔹 Adds bonus to salaries in selected department
-
-- **Procedure 3:** `TransferFunds`  
-  🔹 Transfers funds between accounts  
-  🔹 Validates balance before update
+- `ProcessMonthlyInterest`, `UpdateEmployeeBonus`, `TransferFunds`  
+- Handles interest application, bonus updates, and fund transfers with validations
 
 ---
 
 ### 🧪 3️⃣ JUnit Testing  
-📁 `FSE_JUnitTesting/com.testdemo`, `com.aaademo`
-
-- **Exercise 1:** JUnit Setup  
-  🔹 Tests arithmetic operations using Maven JUnit project
-
-- **Exercise 2:** Assertions in JUnit  
-  🔹 Uses `assertEquals`, `assertTrue`, `assertNotNull`, etc.
-
-- **Exercise 3:** AAA Pattern & Fixtures  
-  🔹 Uses `@Before` and `@After`  
-  🔹 Implements Arrange-Act-Assert structure
+📁 `FSE_JUnitTesting/com.testdemo`, `com.aaademo`  
+🔹 Setup, assertions, AAA structure, and fixtures using `@Before` / `@After`
 
 ---
 
 ### 📋 4️⃣ SLF4J Logging  
-📁 `FSE_LoggingExercise/com.logging.example`
-
-- Logs warning and error messages  
-- Configured with SLF4J + Logback  
-- Simulates exceptions and logs them
+📁 `FSE_LoggingExercise/com.logging.example`  
+🔹 Logs warnings and errors with custom messages  
+🔹 Simulates runtime exceptions using Logback
 
 ---
 
 ### 🔁 5️⃣ Mockito Mocking & Verification  
-📁 `FSE_MockTesting/com.mockdemo`, `com.mockverify`
+📁 `FSE_MockTesting/com.mockdemo`, `com.mockverify`  
+🔹 Mocks external APIs and verifies interactions
 
-- **Mocking & Stubbing:**  
-  🔹 Mocks `ExternalApi` and stubs return value
+---
 
-- **Interaction Verification:**  
-  🔹 Verifies method `getData()` was called on the mock
+## ✅ Week 03 Submissions
+
+➡️ **Focus:** JPA, Hibernate, Spring Data JPA, ORM Implementation, Entity Relationships  
+➡️ **Packages:** `com.jpaexample`, `com.hibernateexample`, `com.springdatajpaexample`  
+➡️ **Folders:** `Week03/FSE_JPA_ORM/code/`, `output/`
+
+---
+
+### 1️⃣ Country Retrieval using Spring JPA  
+📁 `com.springdatajpaexample`  
+🔹 Retrieves a list of countries from MySQL using `JpaRepository`  
+🔹 Configured with `application.properties`  
+🔹 Executed in `main()` with logging and DB output
+
+---
+
+### 2️⃣ One-to-Many Mapping – Department & Employee  
+📁 `com.jpaexample.onetomany`  
+🔹 `Department` → `List<Employee>` mapping using `@OneToMany`  
+🔹 Demonstrates cascading persist  
+🔹 JPA annotations for entity relationships
+
+---
+
+### 3️⃣ Many-to-Many Mapping – Student & Course  
+📁 `com.jpaexample.manytomany`  
+🔹 Students and Courses linked with `@ManyToMany` + `@JoinTable`  
+🔹 Demonstrates association table usage
+
+---
+
+### 4️⃣ One-to-One Mapping – Employee & Address  
+📁 `com.jpaexample.onetoone`  
+🔹 `@OneToOne` mapping  
+🔹 Employee has a unique address  
+🔹 Demonstrates bidirectional mapping
+
+---
+
+### 5️⃣ JPA vs Hibernate vs Spring Data JPA  
+📁 `com.hibernateexample`, `com.springdatajpaexample`  
+🔹 Includes a comparative explanation and code snippets  
+🔹 Manual `Session` handling (Hibernate) vs `JpaRepository` abstraction  
+🔹 Highlights boilerplate reduction with Spring Data JPA  
+🔹 Includes proper transactional annotations
+
+🧾 Output files for all Week 03 exercises are stored in:  
+📂 `Week03/FSE_JPA_ORM/output/`
 
 ---
 
@@ -122,10 +144,12 @@ Each assignment follows **clean OOP practices**, modular structure, and demonstr
 - Oracle SQL Developer (PL/SQL)  
 - Eclipse IDE  
 - Maven  
+- Spring Boot 3.5.3  
 - JUnit 4.13 / 5.x  
 - Mockito 4.x  
 - SLF4J & Logback  
-- Git & GitHub
+- Git & GitHub  
+- MySQL 8.0
 
 ---
 
@@ -137,17 +161,16 @@ Each assignment follows **clean OOP practices**, modular structure, and demonstr
 git clone https://github.com/MonigaBala/DigitalNurture-Java-FSE.git
 
 1. Open Eclipse → File → Import → Maven > Existing Maven Projects
-2. Navigate to your test/main classes
+2. Navigate to your desired exercise folders
 3. Right-click → Run As → Java Application or JUnit Test
 
 🔵 PL/SQL Scripts
-
 1. Open Oracle SQL Developer
 2. Enable DBMS_OUTPUT
 3. Run .sql files from FSE_ControlStructures_Exercise/code/
-4. Copy results to matching .txt files in the output/ folder
+4.Copy results to .txt files inside output/ folder
 
-👩‍💻 Author
+👩‍💻 Author:
 Moniga Balasubramanian
 📧 monigabala1207@gmail.com
 🎓 Java FSE Trainee – Cognizant Digital Nurture 4.0
@@ -156,5 +179,6 @@ Moniga Balasubramanian
 Week	Focus Areas	Status
 01	Core Java, Recursion, Design Patterns	✅ Done
 02	PL/SQL, Stored Procedures, JUnit, Mockito	✅ Done
+03	JPA, Hibernate, Spring Data JPA, ORM Mapping	✅ Done
 
 ✅ Thank you for reviewing!
