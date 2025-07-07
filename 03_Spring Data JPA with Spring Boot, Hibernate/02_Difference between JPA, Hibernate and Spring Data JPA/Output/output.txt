@@ -1,0 +1,28 @@
+-----------------------------------------------
+OUTPUT - Exercise 5: Difference between JPA, Hibernate and Spring Data JPA
+-----------------------------------------------
+
+✅ JPA vs Hibernate vs Spring Data JPA: Demo Output
+
+--- Hibernate Demo ---
+Hibernate: insert into employee (name, salary) values (?, ?)
+Hibernate transaction committed.
+Employee added successfully using Hibernate.
+Generated Employee ID: 1
+
+--- Spring Data JPA Demo ---
+Spring Boot application started...
+EmployeeRepository.save(employee) invoked
+Employee saved successfully using Spring Data JPA.
+Generated Employee ID: 2
+
+--- Logging from application.properties ---
+DEBUG: org.hibernate.SQL - insert into employee (name, salary) values (?, ?)
+DEBUG: com.example.EmployeeService - Saving employee using Spring Data JPA...
+
+--- Notes ---
+- Hibernate handled transaction manually using Session & Transaction.
+- Spring Data JPA auto-managed transaction with @Transactional annotation.
+- Spring Boot reduced boilerplate using Spring Data's JpaRepository.
+
+-----------------------------------------------
