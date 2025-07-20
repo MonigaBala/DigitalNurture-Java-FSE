@@ -161,6 +161,42 @@ Each assignment follows **clean OOP practices**, modular structure, and demonstr
 🔹 Configured to run on port `8081` to avoid conflict
 
 ---
+✅ Week 06 Submissions
+➡️ Focus: ReactJS Fundamentals – JSX, Components, Props, State, Lifecycle, Styling
+➡️ Folders: 06_React/02_ReactJS-HOL/Code/
+
+1️⃣ First React App – JSX Demo
+📁 myfirstreact/
+🔹 Created using create-react-app
+🔹 Rendered a welcome message using JSX syntax
+🔹 Displayed output: “Welcome to the first session of React”
+
+2️⃣ Class Components – Student Management Portal
+📁 StudentApp/
+🔹 Built three separate class components: Home, About, Contact
+🔹 Rendered all components inside App.js
+🔹 Demonstrated usage of render() and JSX return in class-based components
+
+3️⃣ Functional Component – Score Calculator
+📁 scorecalculatorapp/
+🔹 Created a stateless functional component with props
+🔹 Displayed student information and calculated average score
+🔹 Applied styles using an external CSS file (mystyle.css)
+
+4️⃣ Lifecycle Methods & API Fetch – Blog App
+📁 blogapp/
+🔹 Used class component lifecycle methods: componentDidMount() & componentDidCatch()
+🔹 Fetched dummy blog posts using fetch() API call from jsonplaceholder.typicode.com
+🔹 Rendered a list of post titles and bodies dynamically
+🔹 Handled fetch errors gracefully
+
+5️⃣ Styling with CSS Modules and Inline Styles
+📁 cohortdashboardapp/
+🔹 Styled a component using a CohortDetails.module.css file
+🔹 Used scoped CSS class (box) for layout
+🔹 Applied conditional inline styles for heading color based on cohort status (green if ongoing, blue otherwise)
+🔹 Used semantic tags like <dl>, <dt>, and <dd> to structure cohort details
+🔹 Matched UI layout with the sample output provided in lab
 
 ## 🛠 Technologies Used
 
@@ -206,5 +242,5 @@ Week	Focus Areas	Status
 03	JPA, Hibernate, Spring Data JPA, ORM Mapping	✅ Done
 04	Spring Boot REST APIs	✅ Done
 05	Microservices with Spring Boot	✅ Done
-
+06  React      Done
 ✅ Thank you for reviewing!
