@@ -1,0 +1,25 @@
+.card {
+  width: 260px;
+  display: inline-block;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  vertical-align: top;
+  background-color: white;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+dd {
+  margin: 0 0 10px 0;
+}
