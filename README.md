@@ -162,6 +162,45 @@ Each assignment follows **clean OOP practices**, modular structure, and demonstr
 
 ---
 
+## ✅ Week 07 Submissions  
+➡️ **Focus:** ReactJS – Events, Conditional Rendering, Form Handling, JSX with DOM  
+➡️ **Folder:** `07_React/Week07_HandsOns/`
+
+### 1️⃣ `cricketapp` – Player Listing & Filtering  
+📁 `cricketapp/`  
+🔹 Display 11 players using `map()`  
+🔹 Filter players with score < 70 using arrow functions  
+🔹 Team splitting using **destructuring**  
+🔹 Merge of T20 and Ranji players using **spread operator**
+
+### 2️⃣ `officespacerentalapp` – JSX + Conditional Styling  
+📁 `officespacerentalapp/`  
+🔹 Display office image, name, rent, and address using JSX  
+🔹 Rent styled **green if > ₹60000** or **red if < ₹60000**
+
+### 3️⃣ `eventexamplesapp` – React Event Handling  
+📁 `eventexamplesapp/`  
+🔹 Buttons: Increment, Decrement, Welcome  
+🔹 Synthetic event handling (onClick → "I was clicked")  
+🔹 Currency converter: INR to Euro using state and form event
+
+### 4️⃣ `ticketbookingapp` – Conditional Navigation with Login  
+📁 `ticketbookingapp/`  
+🔹 Shows **Guest page** for browsing flights  
+🔹 After Login, allows ticket booking via **User page**  
+🔹 Login/Logout toggles the view conditionally
+
+### 5️⃣ `bloggerapp` – Multiple Conditional Rendering Techniques  
+📁 `bloggerapp/`  
+🔹 Three components: BookDetails, BlogDetails, CourseDetails  
+🔹 Demonstrates 4 types of rendering:
+  - `if/else`
+  - element variables
+  - ternary operator
+  - logical `&&`
+
+---
+
 ## 🛠 Technologies Used
 
 - Java 17 / Java 21  
@@ -206,6 +245,7 @@ Moniga Balasubramanian
 🎓 Java FSE Trainee – Cognizant Digital Nurture 4.0
 
 📅 Submission Summary
+
 Week	Focus Areas	Status
 01	Core Java, Recursion, Design Patterns	✅ Done
 02	PL/SQL, Stored Procedures, JUnit, Mockito	✅ Done
@@ -213,5 +253,6 @@ Week	Focus Areas	Status
 04	Spring Boot REST APIs	✅ Done
 05	Microservices with Spring Boot	✅ Done
 06	ReactJS Components, Props, Styling	✅ Done
+07	ReactJS Events, JSX, Forms, Conditional Rendering	✅ Done
 
 ✅ Thank you for reviewing!
